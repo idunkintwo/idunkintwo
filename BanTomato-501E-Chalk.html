@@ -1,0 +1,681 @@
+<!DOCTYPE html>
+         <html lang="en">
+    <head>
+         <meta charset="UTF-8">
+            <meta name="author"          content="IsadoreDunkin">
+            <meta name="viewport"        content="width=device-width, initial-scale=1.0">
+
+                                   <!--<link rel="stylesheet" href="ExampleStyle.css">-->
+
+<title>BanTomato-5010E-Chalk</title>
+
+
+    <!--11:00 AM 10/4/2022-->
+
+         <!--https://codepen.io/idunkintwo/pen/qBaePod-->
+
+         <!--Before MediaQuery-Centered-At-335x825-Inspect-->
+
+
+
+<style type="text/css" media="screen">
+
+                                     
+     :root { --body-bg-color         : #c3b1ba;  
+            --sec1Border-bg-color    : black;
+            --sec1Border-border-color: white;                       
+           }
+      span { font-weight             : 900;
+           }
+                                   /* *{ margin          :                               0;
+                                         padding         :                               0;
+                                       }*/
+                                        body { /*background-color:           var(--body-bg-color);*/
+                                               background: url(https://web.archive.org/web/20150807125159if_/http://www.noirextreme.com/digital/Earth-Color4096.jpg);
+                                                          no-repeat center center/cover;
+
+                                               line-height     :                           100%;
+                                               font-family     :                        Courier;
+                                               font-size       :                         .75rem;
+                                               font-weight     :                         normal;
+                                               padding-top     :                         .06rem; 
+                                               padding-right   :                         .12rem;
+                                               padding-bottom  :                         .06rem; 
+                                               padding-left    :                         .12rem;
+                                             } 
+                                 /*.hrTBnest-T { background-color:                          black;
+                                               border          :           .14rem solid #00cc99;
+                                               width           :                            85%;
+                                               border-radius   :                            4px;
+                                               padding         :        .08rem 0rem .08rem 0rem;
+                                               margin          :         .5rem 0rem .25rem 1rem;
+                                               overflow-x      :                         hidden;
+                                             }*/
+                                 /*.hrTBnest-B { background-color:                          black;
+                                               border          :           .14rem solid #00cc99;
+                                               width           :                            85%;
+                                               border-radius   :                            4px;
+                                               padding         :        .08rem 0rem .08rem 0rem;
+                                               margin          :           0rem 0rem .5rem 1rem;
+                                               overflow-x      :                         hidden;
+                                             }*/
+                                 
+                                    #outline { background-color:                        #cc6600; 
+                                               border          :           .14rem solid #B87333; /*copper*/
+                                               padding         :                         .18rem;
+                                             }
+                                 #sec0Border { background-color:                          brown; 
+                                               border          :             .10rem solid coral; 
+                                               padding         :                         .02rem;
+                                             } 
+                                       #Sec0 { background-color:                        #954535; /*#C34A2C;chestnutRed*/
+                                               border          :             .12rem solid brown; 
+                                               padding         :                  .80rem .80rem;
+                                             }
+                           #Sec0 #sec1Border { background-color:                          brown;  
+                                               border          :        .14rem solid coral;  
+                                               padding         :                         .18rem;
+                                             }
+                                       #Sec1 { background-color:                     SandyBrown; /*DarkSeaGreen;*/
+                                               border          :           .14rem solid #cc6600;
+                                               padding         :                      0rem 0rem;/*khaki*/
+                                               margin          :                      0rem 0rem;
+                                             }
+
+/*== _[Sec1-TopNavBar]_  Sections(1-1)&(1-2)Images  Sec1-3-BottomNavBar==*/
+
+         /*_[face]_*/
+                                  #container { background: url(https://web.archive.org/web/20150807125159if_/http://www.noirextreme.com/digital/Earth-Color4096.jpg);
+                                               border          :        .14rem solid SandyBrown; /*#804A00;DarkBronze*/
+                                               display         :                           flex;
+                                               opacity         :                            0.6;
+                                             }
+                                            
+                  #sec1Border #Sec1 .sec1Nav { background-color:                        #B87333; /*copper*/
+                                               border          :           .16rem solid #CD7F32; /*bronze;*/ 
+                                               padding         :    .20rem .20rem .20rem .20rem;
+                                               margin          :    .50rem .50rem .50rem .50rem;
+                                               width           :                            25%;
+                                               height          :                           100%;
+                                             }
+          #sec1Border #Sec1 .sec1Nav .sec1UL { background-color:                        #009973; /*chalkBoard*/
+                                               border          :           .14rem solid #804A00; /*DarkBronze*/
+                                               padding         :        .50rem 0rem .50rem 0rem;
+                                               margin          :            0rem 0rem 0rem 0rem;
+                                               display         :                   inline-block;
+                                             }
+
+/*==Div-_[Sec1-TopNavBar]_  Sections(1-1)&(1-2)Images  Sec1-3-BottomNavBar==*/
+
+           /*_[DownBtn]_*/
+
+                           #Sec1 #sec1LIDown { background-color:                        #804A00; /*DarkBronze;*/
+                                               border          :        .10rem solid SandyBrown;
+                                               padding         :  .12rem 1.10rem .12rem 1.10rem;
+                                               margin          :        0rem 0rem .30rem .46rem;
+                                               display         :                   inline-block;
+                                             } 
+                         #Sec1 #sec1LIDown a { background-color:                          black;
+                                               color           :                         yellow;
+                                               border-right    :             .10rem solid brown;
+                                               border-left     :             .10rem solid brown;
+                                               text-decoration :    .10rem solid black overline;
+                                               padding         :    .10rem .26rem .10rem .26rem;
+                                             }
+                   #Sec1 #sec1LIDown a:hover { color           :                          white;
+                                               text-decoration :  .10rem solid underline yellow;
+                                             }
+                  #Sec1 #sec1LIDown a:active { color           :                          green;
+                                             }
+                 #Sec1 #sec1LIDown a:visited { color           :                         violet;
+                                             }
+
+/*==_[Sec1-TopNavBar]_  Sections(1-1)&(1-2)Images  Sec1-3-BottomNavBar==*/
+
+     /*_[HomeBtn]_*/
+
+          #Sec1 .sec1Nav .sec1UL .sec1LIhome { background-color:                        #804A00; /*DarkBronze;*/
+                                               border          :        .10rem solid SandyBrown; 
+                                               padding         :  .12rem 1.10rem .12rem 1.10rem;
+                                               margin          :        0rem 0rem .30rem .46rem;
+                                               display         :                   inline-block;
+                                             }
+        #Sec1 .sec1Nav .sec1UL .sec1LIhome a { background-color:                          black;
+                                               color           :                         yellow;
+                                               border-right    :             .10rem solid brown;
+                                               border-left     :             .10rem solid brown;
+                                               text-decoration :    .10rem solid black overline;
+                                               padding         :    .10rem .26rem .10rem .26rem;
+                                             }
+  #Sec1 .sec1Nav .sec1UL .sec1LIhome a:hover { color           :                          white;
+                                               text-decoration :  .10rem solid yellow underline;
+                                             }
+ #Sec1 .sec1Nav .sec1UL .sec1LIhome a:active { color           :                          green;
+                                             }
+#Sec1 .sec1Nav .sec1UL .sec1LIhome a:visited { color           :                         violet;
+                                             }
+
+/*==_[Sec1-TopNavBar]_  Sections(1-1)&(1-2)Images  Sec1-3-BottomNavBar==*/
+
+       /*_[A-E]_*/
+  
+                             #Sec1 .sec1LIae { background-color:                        #804A00; /*DarkBronze;*/
+                                               border          :        .10rem solid SandyBrown;
+                                               padding         :  .12rem 1.10rem .12rem 1.10rem;
+                                               margin          :        0rem 0rem .30rem .46rem;
+                                               display         :                   inline-block;
+                                             }
+                           #Sec1 .sec1LIae a { background-color:                          black;
+                                               color           :                         yellow;
+                                               border-right    :             .10rem solid Brown;
+                                               border-left     :             .10rem solid brown;
+                                               text-decoration :    .10rem solid black overline;
+                                               padding         :    .10rem .48rem .10rem .48rem;
+                                             }
+                     #Sec1 .sec1LIae a:hover { color           :                          white;
+                                               text-decoration :  .10rem solid yellow underline;
+                                             }
+                    #Sec1 .sec1LIae a:active { color           :                          green;
+                                             }
+                   #Sec1 .sec1LIae a:visited { color           :                        fuchsia;
+                                             }
+
+/*==_[Sec1-TopNavBar]_  Sections(1-1)&(1-2)Images  Sec1-3-BottomNavBar==*/
+
+       /*_[F-J]_*/                                                    
+  
+                             #Sec1 .sec1LIfj { background-color:                        #804A00; /*DarkBronze;*/
+                                               border          :        .10rem solid SandyBrown;
+                                               padding         :  .12rem 1.10rem .12rem 1.10rem;
+                                               margin          :        0rem 0rem .30rem .46rem;
+                                               display         :                   inline-block;
+                                             }
+                           #Sec1 .sec1LIfj a { background-color:                          black;
+                                               color           :                         yellow;
+                                               border-right    :             .10rem solid brown;
+                                               border-left     :             .10rem solid brown;
+                                               text-decoration :    .10rem solid black overline;
+                                               padding         :    .10rem .48rem .10rem .48rem;
+                                             }
+                     #Sec1 .sec1LIfj a:hover { color           :                          white;
+                                               text-decoration :  .10rem solid yellow underline;
+                                             }
+                    #Sec1 .sec1LIfj a:active { color           :                          green;
+                                             }
+                   #Sec1 .sec1LIfj a:visited { color           :                        fuchsia;
+                                             }
+
+/*==_[Sec1-TopNavBar]_  Sections(1-1)&(1-2)Images  Sec1-3-BottomNavBar==*/
+
+       /*_[K-O]_*/
+
+                             #Sec1 .sec1LIko { background-color:                        #804A00; /*DarkBronze;*/
+                                               border          :        .10rem solid SandyBrown;
+                                               padding         :  .12rem 1.10rem .12rem 1.10rem;
+                                               margin          :        0rem 0rem .30rem .46rem;
+                                               display         :                   inline-block;
+                                             }
+                           #Sec1 .sec1LIko a { background-color:                          black;
+                                               color           :                         yellow;
+                                               border-right    :             .10rem solid brown;
+                                               border-left     :             .10rem solid brown;
+                                               text-decoration :    .10rem solid black overline;
+                                               padding         :    .10rem .48rem .10rem .48rem;
+                                             }
+                     #Sec1 .sec1LIko a:hover { color           :                          white;
+                                               text-decoration :  .10rem solid yellow underline;
+                                             }
+                    #Sec1 .sec1LIko a:active { color           :                          green;
+                                             }
+                   #Sec1 .sec1LIko a:visited { color           :                        fuchsia;
+                                             }
+
+/*==_[Sec1-TopNavBar]_  Sections(1-1)&(1-2)Images  Sec1-3-BottomNavBar==*/
+
+       /*_[P-T]_*/
+
+                             #Sec1 .sec1LIpt { background-color:                        #804A00; /*DarkBronze;*/
+                                               border          :        .10rem solid SandyBrown;
+                                               padding         :  .12rem 1.10rem .12rem 1.10rem;
+                                               margin          :        0rem 0rem .30rem .46rem;
+                                               display         :                   inline-block;
+                                             }
+                           #Sec1 .sec1LIpt a { background-color:                          black;
+                                               color           :                         yellow;
+                                               border-right    :             .10rem solid brown;
+                                               border-left     :             .10rem solid brown;
+                                               text-decoration :    .10rem solid black overline;
+                                               padding         :    .10rem .48rem .10rem .48rem;
+                                             }
+                     #Sec1 .sec1LIpt a:hover { color           :                          white;
+                                               text-decoration :  .10rem solid yellow underline;
+                                             }
+                    #Sec1 .sec1LIpt a:active { color           :                          green;
+                                             }
+                   #Sec1 .sec1LIpt a:visited { color           :                        fuchsia;
+                                             }
+
+/*==_[Sec1-TopNavBar]_  Sections(1-1)&(1-2)Images  Sec1-3-BottomNavBar==*/
+
+          /*_[U-Z]_*/
+
+                             #Sec1 .sec1LIuz { background-color:                        #804A00; /*DarkBronze;*/
+                                               border          :        .10rem solid SandyBrown;
+                                               padding         :  .12rem 1.10rem .12rem 1.10rem;
+                                               margin          :          0rem 0rem 0rem .46rem;
+                                               display         :                   inline-block;
+                                             }
+                           #Sec1 .sec1LIuz a { background-color:                          black;
+                                               color           :                         yellow;
+                                               border-right    :             .10rem solid brown;
+                                               border-left     :             .10rem solid brown;
+                                               text-decoration :    .10rem solid black overline;
+                                               padding         :    .10rem .48rem .10rem .48rem;
+                                             }
+                     #Sec1 .sec1LIuz a:hover { color           :                          white;
+                                               text-decoration :  .10rem solid yellow underline;
+                                             }
+                    #Sec1 .sec1LIuz a:active { color           :                          green;
+                                             }
+                   #Sec1 .sec1LIuz a:visited { color           :                        fuchsia;
+                                             }
+
+/*==Sec1-TopNavBar  _[Sections(1-1)&(1-2)Images]_  Sec1-3-BottomNavBar==*/
+
+                          /*_[First*Image]_*/
+
+                               #Sec1 .Sec1-1 { background-color:                        #B87333; /*copper*/
+                                               border          :           .16rem solid #5C3317; /*BakersBrown*/
+                                               width           :                            40%;
+                                               padding         :    .30rem .30rem .30rem .30rem;
+                                               margin          :    .90rem .30rem .90rem .30rem;
+                                               display         :                   inline-block;
+                                               overflow-x      :                         hidden;
+                                               height          :                           100%;
+                                             }
+                            .Sec1-1 #Header1 { background-color:                        #009973; /*#ChalkBord*/
+                                               border          :           .26rem solid #804A00; /*DarkBronze*/
+                                               padding         :      .12rem .22rem 0rem .22rem; 
+                                               margin          :                           auto;   
+                                             }
+                         .Sec1-1 .imgHeader1 { background: url('https://via.placeholder.com/728x25.png?text=Visit+WhoIs=====.............................                                                                     P L A C E    H O L D E R  ...  C O M    H  O  S  T  I  N  G       T  H  I  S .... C  O  M   +Buyers+GuideC/O https://placeholder.com/')
+                                                          no-repeat center center/cover;
+                                               width           :                           100%;
+                                             /*height          :                           100%;*/ /*height stretches*/
+                                             /*height          :                           auto;*/
+                                               padding         :          .15rem 0rem 0rem 0rem;
+                                             /*margin          :        .07rem 0rem .07rem 0rem;*/
+                                               margin          :                           auto;       
+                                             }
+
+/*==Sec1-TopNavBar  _[Sections(1-1)&(1-2)Images]_  Sec1-3-BottomNavBar==*/
+
+                        /*_[Second**Image]_*/
+
+                               #Sec1 .Sec1-2 { background-color:                        #B87333; /*copper*/
+                                               border          :           .16rem solid #5C3317; /*BakersBrown*/
+                                               width           :                            40%;
+                                               padding         :    .30rem .30rem .30rem .30rem;
+                                               margin          :    .90rem .30rem .90rem .30rem;
+                                               display         :                   inline-block;
+                                               overflow-x      :                         hidden;
+                                               height          :                           100%;
+                                             }
+                            .Sec1-2 #Header2  { background-image:   url('https://1.bp.blogspot.com/-4CHlBxsvQ_0/UrxJVGBY_tI/AAAAAAAAAWo/OK14DV9oCaQ/s1600/Christmas+Sky+Full+Of+Stars.jpg');
+                                               background-repeat:0 0 no-repeat;
+                                               
+                                               border          :           .26rem solid #804A00; /*DarkBronze*/
+                                               padding         :      .12rem .22rem 0rem .22rem;    
+                                               margin          :                           auto;   
+                                             }
+
+                         .Sec1-2 .imgHeader2 { background-color:                        #B87333; /*copper*/
+                                               width           :                           100%;
+                                             /*height          :                           100%;*//*height ratio stretches*/
+                                               padding         :          .15rem 0rem 0rem 0rem;
+                                             /*margin          :        .07rem 0rem .07rem 0rem;*/
+                                               margin          :                           auto;       
+                                             }
+
+/*==Div-sec1Border  Sec1-TopNavBar  Sections(1-1)&(1-2)Images  _[Sec1-3-BottomNavBar]_==*/
+
+                                                                  /*_[InsideFace]_*/
+
+                            #Sec1 .sec1-3Nav { background-color:                        #B87333; /*copper*/
+                                               border          :           .16rem solid #CD7F32; /*bronze;*/ 
+                                               padding         :    .20rem .20rem .20rem .20rem;
+                                               margin          :    .50rem .50rem .50rem .50rem;
+                                               width           :                            25%;
+                                               height          :                           100%;
+                                             }
+                  #Sec1 .sec1-3Nav .sec1-3UL { background-color:                        #009973; /*chalkBoard*/
+                                               border          :           .14rem solid #804A00; /*DarkBronze*/
+                                               padding         :        .50rem 0rem .50rem 0rem;
+                                               margin          :            0rem 0rem 0rem 0rem;
+                                               display         :                   inline-block;
+                                             }
+
+/*==Div-sec1Border  Sec1-TopNavBar  Sections(1-1)&(1-2)Images  _[Sec1-3-BottomNavBar]_==*/
+
+                                                             /*_[Homme]_*/
+
+              #Sec1 .sec1-3Nav .sec1-3LIhome { background-color:                        #804A00; /*DarkBronze;*/
+                                               border          :        .10rem solid SandyBrown;
+                                               padding         :  .12rem 1.10rem .12rem 1.10rem;
+                                               margin          :        0rem 0rem .30rem .46rem;
+                                               display         :                   inline-block;
+                                             }
+             #Sec1 .sec1-3UL .sec1-3LIhome a { background-color:                          black;
+                                               color           :                         yellow;
+                                               border-right    :             .10rem solid Brown;
+                                               border-left     :             .10rem solid Brown;
+                                               text-decoration :    .10rem solid black overline;
+                                               padding         :    .10rem .26rem .10rem .26rem;
+                                             } 
+       #Sec1 .sec1-3UL .sec1-3LIhome a:hover { color           :                          white;
+                                               text-decoration :  .10rem solid yellow underline;
+                                             }
+      #Sec1 .sec1-3UL .sec1-3LIhome a:active { color           :                          green;
+                                             }
+     #Sec1 .sec1-3UL .sec1-3LIhome a:visited { color           :                         violet;
+                                             }
+
+/*==Sec1-TopNavBar  Sections(1-1)&(1-2)Images  _[Sec1-3-BottomNavBar]_==*/
+
+                                                    /*_[.1-.9]_*/
+
+                #Sec1 .sec1-3UL .sec1-3LI1-9 { background-color:                        #804A00; /*DarkBronze;*/
+                                               border          :        .10rem solid SandyBrown;
+                                               padding         :  .12rem 1.10rem .12rem 1.10rem;
+                                               margin          :        0rem 0rem .30rem .46rem;
+                                               display         :                   inline-block;
+                                             }
+              #Sec1 .sec1-3UL .sec1-3LI1-9 a { background-color:                          black;
+                                               color           :                         yellow;
+                                               border-right    :             .10rem solid Brown;
+                                               border-left     :             .10rem solid Brown;
+                                               text-decoration :    .10rem solid black overline;
+                                               padding         :    .10rem .26rem .10rem .26rem;
+                                             } 
+      #Sec1 .sec1-3UL .sec1-3LI1-9 a:hover   { color           :                          white;
+                                               text-decoration :  .10rem solid yellow underline;
+                                             }
+      #Sec1 .sec1-3UL .sec1-3LI1-9 a:active  { color           :                          green;
+                                             }
+      #Sec1 .sec1-3UL .sec1-3LI1-9 a:visited { color           :                         violet;
+                                             }
+
+/*==Sec1-TopNavBar  Sections(1-1)&(1-2)Images  _[Sec1-3-BottomNavBar]_==*/
+
+                                                       /*_[01-10]_*/
+
+              #Sec1 .sec1-3UL .sec1-3LI01-10 { background-color:                        #804A00; /*DarkBronze;*/
+                                               border          :        .10rem solid SandyBrown;
+                                               padding         :  .12rem 1.10rem .12rem 1.10rem;
+                                               margin          :        0rem 0rem .30rem .46rem;
+                                               display         :                   inline-block;
+                                             }
+            #Sec1 .sec1-3UL .sec1-3LI01-10 a { background-color:                          black;
+                                               color           :                         yellow;
+                                               border-right    :             .10rem solid Brown;
+                                               border-left     :             .10rem solid Brown;
+                                               text-decoration :    .10rem solid black overline;
+                                               padding         :    .10rem .26rem .10rem .26rem;
+                                             }
+      #Sec1 .sec1-3UL .sec1-3LI01-10 a:hover { color           :                          white;
+                                               text-decoration :  .10rem solid yellow underline;
+                                             }
+     #Sec1 .sec1-3UL .sec1-3LI01-10 a:active { color           :                          green;
+                                             }
+    #Sec1 .sec1-3UL .sec1-3LI01-10 a:visited { color           :                        fuchsia;                       
+                                             }
+
+/*==Sec1-TopNavBar  Sections(1-1)&(1-2)Images  _[Sec1-3-BottomNavBar]_==*/
+
+                                                      /*_[11-20]_*/
+
+              #Sec1 .sec1-3UL .sec1-3LI11-20 { background-color:                        #804A00; /*DarkBronze;*/
+                                               border          :        .10rem solid SandyBrown;
+                                               padding         :  .12rem 1.10rem .12rem 1.10rem;
+                                               margin          :        0rem 0rem .30rem .46rem;
+                                               display         :                   inline-block;
+                                             }
+            #Sec1 .sec1-3UL .sec1-3LI11-20 a { background-color:                          black;
+                                               color           :                         yellow;
+                                               border-right    :             .10rem solid Brown;
+                                               border-left     :             .10rem solid Brown;
+                                               text-decoration :    .10rem solid black overline;
+                                               padding         :    .10rem .26rem .10rem .26rem;
+                                             }
+      #Sec1 .sec1-3UL .sec1-3LI11-20 a:hover { color           :                          white;
+                                               text-decoration :  .10rem solid yellow underline;
+                                             }
+     #Sec1 .sec1-3UL .sec1-3LI11-20 a:active { color           :                          green;
+                                             }
+    #Sec1 .sec1-3UL .sec1-3LI11-20 a:visited { color           :                        fuchsia;                       
+                                             }
+
+/*==Sec1-TopNavBar  Sections(1-1)&(1-2)Images  _[Sec1-3-BottomNavBar]_==*/
+
+                                                      /*_[21-30]_*/
+
+              #Sec1 .sec1-3UL .sec1-3LI21-30 { background-color:                        #804A00; /*DarkBronze;*/
+                                               border          :        .10rem solid SandyBrown;
+                                               padding         :  .12rem 1.10rem .12rem 1.10rem;
+                                               margin          :        0rem 0rem .30rem .46rem;
+                                               display         :                   inline-block;
+                                             }
+            #Sec1 .sec1-3UL .sec1-3LI21-30 a { background-color:                          black;
+                                               color           :                         yellow;
+                                               border-right    :             .10rem solid Brown;
+                                               border-left     :             .10rem solid Brown;
+                                               text-decoration :    .10rem solid black overline;
+                                               padding         :    .10rem .26rem .10rem .26rem;
+                                             }
+      #Sec1 .sec1-3UL .sec1-3LI21-30 a:hover { color           :                          white;
+                                               text-decoration :  .10rem solid yellow underline;
+                                             }
+     #Sec1 .sec1-3UL .sec1-3LI21-30 a:active { color           :                          green;
+                                             }
+    #Sec1 .sec1-3UL .sec1-3LI21-30 a:visited { color           :                        fuchsia;                       
+                                             }
+
+/*==Sec1-TopNavBar  Sections(1-1)&(1-2)Images  _[Sec1-3-BottomNavBar]_==*/
+
+                                                      /*_[31-40]_*/
+
+              #Sec1 .sec1-3UL .sec1-3LI31-40 { background-color:                        #804A00; /*DarkBronze;*/
+                                               border          :        .10rem solid SandyBrown;
+                                               padding         :  .12rem 1.10rem .12rem 1.10rem;
+                                               margin          :        0rem 0rem .30rem .46rem;
+                                               display         :                   inline-block;
+                                             }
+            #Sec1 .sec1-3UL .sec1-3LI31-40 a { background-color:                          black;
+                                               color           :                         yellow;
+                                               border-right    :             .10rem solid Brown;
+                                               border-left     :             .10rem solid Brown;
+                                               text-decoration :    .10rem solid black overline;
+                                               padding         :    .10rem .26rem .10rem .26rem;
+                                             }
+      #Sec1 .sec1-3UL .sec1-3LI31-40 a:hover { color           :                          white;
+                                               text-decoration :  .10rem solid yellow underline;
+                                             }
+     #Sec1 .sec1-3UL .sec1-3LI31-40 a:active { color           :                          green;
+                                             }
+    #Sec1 .sec1-3UL .sec1-3LI31-40 a:visited { color           :                        fuchsia;                       
+                                             }
+
+/*==Sec1-TopNavBar  Sections(1-1)&(1-2)Images  _[Sec1-3-BottomNavBar]_==*/
+
+                                                      /*_[41-50]_*/
+
+              #Sec1 .sec1-3UL .sec1-3LI41-50 { background-color:                        #804A00; /*DarkBronze;*/
+                                               border          :        .10rem solid SandyBrown;
+                                               padding         :  .12rem 1.10rem .12rem 1.10rem;
+                                               margin          :        0rem 0rem 0rem .46rem;
+                                               display         :                   inline-block;
+                                             }
+            #Sec1 .sec1-3UL .sec1-3LI41-50 a { background-color:                          black;
+                                               color           :                         yellow;
+                                               border-right    :             .10rem solid Brown;
+                                               border-left     :             .10rem solid Brown;
+                                               text-decoration :    .10rem solid black overline;
+                                               padding         :    .10rem .26rem .10rem .26rem;
+                                             }
+      #Sec1 .sec1-3UL .sec1-3LI41-50 a:hover { color           :                           white;
+                                               text-decoration :   .10rem solid yellow underline;
+                                             }
+     #Sec1 .sec1-3UL .sec1-3LI41-50 a:active { color           :                           green;
+                                             }
+    #Sec1 .sec1-3UL .sec1-3LI41-50 a:visited { color           :                         fuchsia;                       
+                                             }
+
+
+
+#earth {
+    width: 125px;
+    height: 125px;
+    background: url(https://web.archive.org/web/20150807125159if_/http://www.noirextreme.com/digital/Earth-Color4096.jpg);
+    border-radius: 50%;
+    background-size: 610px;
+    box-shadow: inset 8px 36px 80px 36px rgb(1, 11, 1),
+    inset -6px 0 12px 4px rgba(155, 155, 155, 0.3);
+    animation-name: rotate;
+    animation-duration: 12s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    -webkit-animation-name: rotate;
+    -webkit-animation-duration: 3s;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-timing-function: linear;
+}
+
+@keyframes rotate {
+    from { background-position: 0px 0px; }
+    to { background-position: 500px 0px; }
+}
+@-webkit-keyframes rotate {
+    from { background-position: 0px 0px; }
+    to { background-position: 500px 0px; }
+}
+
+
+#earth {
+     margin          :        .75rem 0rem 0rem .75rem;
+     opacity         :                            3;
+    width: 150px;
+    height: 125px;
+    background: url(https://web.archive.org/web/20150807125159if_/http://www.noirextreme.com/digital/Earth-Color4096.jpg);
+    border-radius: 50%;
+    background-size: 310px;
+    /*box-shadow: inset 8px 36px 80px 36px rgb(2, 2, 2),*/
+    inset -6px 0 12px 4px rgba(155, 155, 155, 1.6);
+    animation-name: rotate;
+    animation-duration: 60s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    -webkit-animation-name: rotate;
+    -webkit-animation-duration: 60s;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-timing-function: linear;
+}
+
+@keyframes rotate {
+    from { background-position: 0px 0px; }
+    to { background-position: 500px 0px; }
+}
+@-webkit-keyframes rotate {
+    from { background-position: 0px 0px; }
+    to { background-position: 500px 0px; }
+}
+
+
+    </style>
+   </head>
+
+<body>
+
+<!--CONTAINER-sec0Border--><!--_[FrameOutside]_-->
+
+<div id="outline">
+
+     <div id="sec0Border"> 
+ <section id="Sec0">
+
+          <!--sec1Border--><!--_[FrameInside]_-->
+
+     <div id="sec1Border"> 
+ <section id="Sec1">
+
+
+
+           <!--Sec1-TopNavBar  Sections(1-1)&(1-2)Images   Sec1-3-BottomNavBar-->
+
+      <div id="container">
+   <nav class="sec1Nav">
+    <ul class="sec1UL">
+
+         <li id="sec1LIDown"><a href="#Foot">Down</a></li>
+      <li class="sec1LIhome"><a href="#"                                              target="_blank">Home</a></li>
+      <li class="sec1LIae">  <a href="#"                                              target="_blank">A-E </a></li>
+      <li class="sec1LIfj">  <a href="file:///C:/Users/lcl/A-Z/F-J/F-J-Alphabet.html" target="_blank">F-J </a></li>
+      <li class="sec1LIko">  <a href="file:///C:/Users/lcl/A-Z/K-O/K-O-Alphabet.html" target="_blank">K-O </a></li>
+      <li class="sec1LIpt">  <a href="file:///C:/Users/lcl/A-Z/P-T/P-T-Alphabet.html" target="_blank">P-T </a></li>
+      <li class="sec1LIuz">  <a href="file:///C:/Users/lcl/A-Z/U-Z/U-Z-Alphabet.html" target="_blank">U-Z </a></li>
+     </ul>
+    </nav>
+<!--<hr class="hrTBnest-T">-->                                                                                                                     
+                                           
+ 
+
+
+         <!--Sec1-TopNavBar   ****[Section(1-1)Image]****  Section(1-2)Image   Sec1-3-BottomNavBar--> 
+                                      
+                        <section class="Sec1-1">
+                            <header id="Header1">
+
+                              <img src="https://via.placeholder.com/728x25.png?text=Visit+WhoIs=====.............................                                                                     P L A C E    H O L D E R  ...  C O M    H  O  S  T  I  N  G       T  H  I  S .... C  O  M   +Buyers+GuideC/O https://placeholder.com/')" alt="FishTank"      class="imgHeader1" width="696" height="150"/>
+
+
+                           </header>
+                          </section>
+
+         <!--Sec1-TopNavBar   Section(1-1)Image  ****[Section(1-2)Image]****   Sec1-3-BottomNavBar--> 
+
+                                            <section class="Sec1-2">
+                                                <header id="Header2"> 
+                       
+                                                  <div id="earth"></div>
+                                                  <img src="">
+                                                
+                                                </header>
+                                               </section>                     
+<!--<hr class="hrTBnest-B">-->                                                                                        
+                                           
+                 
+
+           
+         <!--Sec1-TopNavBar   Sections(1-1)Image  Section(1-2)Image   *****[Sec1-3-BottomNavBar]****-->
+
+                                                                <nav class="sec1-3Nav">
+                                                                 <ul class="sec1-3UL">
+
+               <li class="sec1-3LIhome"> <a href="#"                                                   target="_blank">Homme</a></li>
+               <li class="sec1-3LI1-9"   id="mediaBrown"> <a href="#"                                                   target="_blank">.1-.9</a></li>
+               <li class="sec1-3LI01-10" id="mediaYellow"><a href="#"                                                   target="_blank">01-10</a></li>
+               <li class="sec1-3LI11-20" id="mediaBlue">  <a href="file:///C:/Users/lcl/01-50/11-20/11-20-Numbers.html" target="_blank">11-20</a></li>
+               <li class="sec1-3LI21-30" id="mediaGreen"> <a href="file:///C:/Users/lcl/01-50/21-30/21-30-Numbers.html" target="_blank">21-30</a></li>
+               <li class="sec1-3LI31-40" id="mediaOrange"><a href="file:///C:/Users/lcl/01-50/31-40/31-40-Numbers.html" target="_blank">31-40</a></li>
+               <li class="sec1-3LI41-50" id="mediaRed">   <a href="file:///C:/Users/lcl/01-50/41-50/41-50-Numbers.html" target="_blank">41-50</a></li>
+              </ul>
+             </nav>
+        </div>
+
+    </section>
+   </div>    <!--_[FrameInside]_-->                                                          
+ </section>
+</div>       <!--_[FrameOutside]_-->
+
+</div><!--Outline-->
+ </body>
+</html> 
